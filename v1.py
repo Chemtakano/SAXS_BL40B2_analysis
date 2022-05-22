@@ -1,5 +1,6 @@
 import tkinter
 from tkinter import filedialog
+import pandas as pd
 
 def getdatadir():
     datadir = filedialog.askdirectory(
@@ -14,14 +15,17 @@ def getsavedir():
 def getLogfile():
     Logfile = filedialog.askopenfilename(
         title='select the Logsheet',
-        filetypes=("Logsheet", ".xlsx")
+        filetypes=[("Logsheet", ".xlsx")]
         )
+
 def getICfile():
-    ICfile = filedialog.askopenfilename(
+    filedialog.askopenfilename(
         title='select the directory',
         filetypes=[("text file from BL40B2 (*.txt)", ".txt")]
         )
+        
 
+#application-----------
 root = tkinter.Tk()
 root.title("SAXS data analysis")
 root.geometry("400x300")
@@ -61,7 +65,7 @@ btn5.grid(column=0, row=5, sticky="NSEW")
 #button6
 btn6 = tkinter.Button()
 btn6["text"] = "exit"
-btn6["command"] = root. destroy
+btn6["command"] = root.destroy
 btn6.grid(column=0, row=6, sticky="NSEW")
 
 root.mainloop()
