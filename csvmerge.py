@@ -70,7 +70,7 @@ input_label = tkinter.Label(text=".xlsx")
 input_label.place(x=380, y=140)
 
 #ボタンの作成
-button = tkinter.Button(text="start analysis",command=merge)
+button = tkinter.Button(text="start",command=merge)
 button.place(x=140, y=240)
 
 
