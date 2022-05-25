@@ -7,7 +7,11 @@ def getfiles():
       title='select the files',
       filetypes=[("csvfile (*.csv)", ".csv")]
       )
-    input_box1.insert(tkinter.END, files) 
+    lif=[]
+    for i in files:
+        lif.append(i)
+    
+    input_box1.insert(tkinter.END, lif) 
 
 def getsavedir():
     savedir_path = filedialog.askdirectory(
