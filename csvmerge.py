@@ -7,11 +7,8 @@ def getfiles():
       title='select the files',
       filetypes=[("csvfile (*.csv)", ".csv")]
       )
-    lif=[]
     for i in files:
-        lif.append(i)
-    
-    input_box1.insert(tkinter.END, lif) 
+        input_box1.insert(tkinter.END, str(i)+',') 
 
 def getsavedir():
     savedir_path = filedialog.askdirectory(
@@ -21,7 +18,8 @@ def getsavedir():
 
 
 def merge():
-    files2=input_box1.get().split()
+    files2=input_box1.get().split(',')
+    files2=files2[:-1]
     savepath=input_box2.get()
     name=input_box3.get()
 
