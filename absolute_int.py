@@ -1,4 +1,3 @@
-from sunau import AUDIO_FILE_ENCODING_LINEAR_32
 import tkinter
 from tkinter import filedialog
 import pandas as pd
@@ -97,7 +96,7 @@ def ana2():
 
 ##App----------------------------------------------
 root = tkinter.Tk()
-root.title("Takano marge app")
+root.title("absolute intensity")
 root.geometry("550x330")
 
 #text data--------
