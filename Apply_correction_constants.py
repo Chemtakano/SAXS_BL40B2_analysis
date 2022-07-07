@@ -10,10 +10,11 @@ def work():
     F=float(input_box3.get())
 
     for i in datas:
-        df=pd.read_csv(i, header=None)
+        df=pd.read_csv(i, header=None, skiprows=1)
         df2=pd.read_csv(i)
         name=df2.columns[1]
         df[1]=df[1]*F
+        df=df.rename(columns={0: 'q', 1: name})
         df.to_csv(savepath + '/' + name + '_abs.csv', index = False)
 
 def getfiles():
