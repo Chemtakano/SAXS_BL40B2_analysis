@@ -17,14 +17,14 @@ def getsavedir():
 
 def getLogfile():
     Logsheet_path = filedialog.askopenfilename(
-        title='select the saving directory',
+        title='select the Logsheet',
         filetypes=[("Logsheet", ".xlsx")]
         )
     input_box3.insert(tkinter.END, Logsheet_path) 
 
 def getICfile():
     ICfile_path = filedialog.askopenfilename(
-        title='select the directory',
+        title='select the txt file ftom BL40B2',
         filetypes=[("text file from BL40B2 (*.txt)", ".txt")]
         )
     input_box4.insert(tkinter.END, ICfile_path)
