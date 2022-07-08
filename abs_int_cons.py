@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def getdir():
     dirchi = filedialog.askdirectory(
-        title='select the directory storing chifiles'
+        title='select the directory storing chifiles and txtfile'
         )
     input_box1.insert(tkinter.END, dirchi) 
 
@@ -105,7 +105,7 @@ input_box1 = tkinter.Entry(width=40)
 input_box1.place(x=10, y=40)
 
 #ラベルの作成
-input_label = tkinter.Label(text="select the text files")
+input_label = tkinter.Label(text="select the data directry")
 input_label.place(x=10, y=10)
 
 #ボタンの作成

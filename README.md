@@ -1,4 +1,6 @@
 # about this codes
+I am new to Python, so please forgive me if there is some useless code.
+
 (1)dataanalysis_main.py
 This is a code to analyze chi files obtained from measurements at the BL40B2 beamline at SPring-8.
 It performs transmittance correction and subtracts the solvent data from the sample data.
@@ -24,4 +26,4 @@ This is the code that can calculate the absolute scattering intensity correction
 (6)apply_correction.py
 This is the code that apply the absolute scattering intensity correction constant to csv files that you selected.
 
-This code can work on Jyupyter Notebook. When you use this, copy and paste on the Jupyter Notebook, please.
+This code can work on Jyupyter Notebook. When you use this, code '%matlplotlib' on the Jupyter Notebook, and copy and paste this code on it, please.

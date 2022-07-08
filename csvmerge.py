@@ -44,7 +44,7 @@ input_box1 = tkinter.Entry(width=40)
 input_box1.place(x=10, y=40)
 
 #ラベルの作成
-input_label = tkinter.Label(text="select files")
+input_label = tkinter.Label(text="Select files (.csv) that you want to merge.")
 input_label.place(x=10, y=10)
 
 #ボタンの作成
@@ -55,7 +55,7 @@ button1.place(x=10, y=70)
 input_box2 = tkinter.Entry(width=40)
 input_box2.place(x=10, y=140)
 
-input_label = tkinter.Label(text="saving directry")
+input_label = tkinter.Label(text="Select the saving directry")
 input_label.place(x=10, y=110)
 
 button2 = tkinter.Button(text="参照",command=getsavedir)
