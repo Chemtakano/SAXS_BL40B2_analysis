@@ -64,7 +64,7 @@ def analysis():
         #抽出範囲
         df_fin3=df_fin2.query('0.02<q<1.8')
 
-        df_fin2.to_csv(savepath + '/' + i + '.csv', index = False)  
+        df_fin3.to_csv(savepath + '/' + i + '.csv', index = False)  
 
 
 #ウインドウの作成
