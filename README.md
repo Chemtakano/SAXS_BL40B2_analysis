@@ -26,4 +26,7 @@ This is the code that can calculate the absolute scattering intensity correction
 (6)apply_correction.py
 This is the code that apply the absolute scattering intensity correction constant to csv files that you selected.
 
+(7)concat_qrange.py
+This is the code you can link SAXS and WAXS profile with your selected q point.
+
 This code can work on Jyupyter Notebook. When you use this, code '%matlplotlib' on the Jupyter Notebook, and copy and paste this code on it, please.
