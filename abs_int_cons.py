@@ -96,7 +96,7 @@ def ana2():
 
 ##App----------------------------------------------
 root = tkinter.Tk()
-root.title("absolute intensity")
+root.title("absolute intensity cons cal")
 root.geometry("550x330")
 
 #text data--------

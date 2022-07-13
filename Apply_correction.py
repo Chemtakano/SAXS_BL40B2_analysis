@@ -35,7 +35,7 @@ def getsavedir():
 ##Apprication--------------------------------------------------
 #ウインドウの作成
 root = tkinter.Tk()
-root.title("Takano in situ analysis app")
+root.title("Apply_correction")
 root.geometry("360x450")
 
 #sample--------
